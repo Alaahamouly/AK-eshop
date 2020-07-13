@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AK.com</title>
+    <link rel='stylesheet' href='css/bootstrap.css'/>
+    <link rel='stylesheet' href='css/style.css'/>
+    <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>   
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--Start of navBar-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <!-- mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="images/brand.png" class="img-responsive" width="150" height="auto"></a>
+        </div>
+
+        <!-- Left links -->
+        <ul class="nav navbar-nav navbar-left navbtn">
+          <a href="register.html"><button type="button" class="btn btn-default navbar-btn btn-success registbtn">Register</button></a>
+          <a href="login.html"><button type="button" class="btn btn-default navbar-btn btn-info loginbtn">Login</button></a>
+        </ul>
+        <!-- contact area -->
+        <ul class="nav navbar-nav navbar-right">
+          <img src="images/contact.png" class="navimg">
+        </ul>
+        <!-- Right links -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav><!-- End of navBar-->
+
+    <!-- Start of Register -->
+    <div class="regist">
+        <div class="row">
+
+          <div class="col-sm-12">
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="full name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="E-mail ( User Name )">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="phone number">
+            </div>
+            <div class="form-group">
+              <input type="password" data-minlength="6" class="form-control input-lg" id="inputPassword" placeholder="Password - Minimum of 6 characters" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm password" required>
+            <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>  
+        <button type="submit" class="btn btn-success btn-block">Finish</button>
+        <button type="submit" class="btn btn-danger btn-block exitregist">Exit</button>    
+    </div><!-- End of Register -->
+
+      <!--include script files-->
+      <script src="js/jquery-1.11.3.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
